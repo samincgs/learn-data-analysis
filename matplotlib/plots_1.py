@@ -22,9 +22,10 @@ py_dev_y = [45372, 48876, 53850, 57287, 63016,
 js_dev_y = [37810, 43515, 46823, 49293, 53437,
             56373, 62375, 66674, 68745, 68746, 74583]
 
-# plot the values (x, y)
+# plot the values (x, y) 
 # change formatting of the plot
 # can use format strings in the plot declaration if you want fmt = '[marker][line][color]'
+# use plt.bar() for a bar chart instead
 plt.plot(ages_x, py_dev_y, color='#5a7d9a', label='Python', linewidth=3) # # or use format string 'b'
 plt.plot(ages_x, js_dev_y, color='#3b9d44', label='Javascript', linewidth=3)
 plt.plot(ages_x, dev_y, color='#444444', linestyle='--', label='All Devs') # or use format string '--k'
