@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 # DATA
 # x-axis values (age ranges)
 ages_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
