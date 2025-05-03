@@ -7,7 +7,7 @@ median_salaries_ages_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
 median_salaries_devs_y = [38496, 42000, 46752, 49320, 53200, 56000, 62316, 64928, 67317, 68748, 73752]
 
 # python developers by age (no need since its repetitive)
-py_dev_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35] 
+# py_dev_x = [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35] 
 
 # median python developer salaries (USD)
 py_dev_y = [45372, 48876, 53850, 57287, 63016,
@@ -18,6 +18,17 @@ js_dev_y = [37810, 43515, 46823, 49293, 53437,
             56373, 62375, 66674, 68745, 68746, 74583]
 
 
-plt.plot(median_salaries_ages_x, median_salaries_devs_y)
+plt.plot(median_salaries_ages_x, median_salaries_devs_y, label='All Devs') # add the label as the legend
+plt.plot(median_salaries_ages_x, py_dev_y, label='Python Devs')
+
+# add a title and labels
+plt.title('Median Salary (USD) by Age')
+plt.xlabel('Ages')
+plt.ylabel('Median Salary (USD)')
+
+# add a legend 
+# plt.legend(['All Devs', 'Python']) # first method
+plt.legend()
+
 
 plt.show()
