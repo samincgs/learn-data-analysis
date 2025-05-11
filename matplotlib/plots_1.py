@@ -18,17 +18,24 @@ js_dev_y = [37810, 43515, 46823, 49293, 53437,
             56373, 62375, 66674, 68745, 68746, 74583]
 
 
-plt.plot(median_salaries_ages_x, median_salaries_devs_y, color='#444444', linestyle='--', label='All Devs', ) # add the label as the legend
-plt.plot(median_salaries_ages_x, py_dev_y, color='#5a7d9a', label='Python Devs') # optional third parameter is to format the line on the plot fmt=[marker][line][color] or add as individual named parameters
+
 
 # add a title and labels
 plt.title('Median Salary (USD) by Age')
 plt.xlabel('Ages')
 plt.ylabel('Median Salary (USD)')
 
+plt.grid(True) # adds a grid at the back
+
 # add a legend 
 # plt.legend(['All Devs', 'Python']) # first method
 plt.legend()
 
+plt.plot(median_salaries_ages_x, py_dev_y, color='#5a7d9a', linewidth=3, label='Python Devs') # optional third parameter is to format the line on the plot fmt=[marker][line][color] or add as individual named parameters
+plt.plot(median_salaries_ages_x, js_dev_y, color='#adad3b', linewidth=3, label='JavaScript Devs')
+plt.plot(median_salaries_ages_x, median_salaries_devs_y, color='#444444', linestyle='--', label='All Devs', ) # add the label as the legend
+
+# automatically adds padding
+plt.tight_layout()
 
 plt.show()
