@@ -21,23 +21,23 @@ The `SELECT` statement is used to **query data from a table**. It returns rows t
 
 ### Logical Operators
 
--> Use `AND` to combine multiple conditions that must all be true.  
+-> Use `AND` to combine multiple conditions that must all be true.    
 -> Use `OR` to combine multiple conditions where at least one must be true.  
 -> Use `NOT` to negate or invert a condition.
 
 ## NULL Values
 
--> NULL means that the value is not present for that row.
+-> NULL means that the value is not present for that row.  
 -> Use `IS NULL` or `IS NOT NULL` to find or search for null values.
 
 ## LIKE, BETWEEN
 
--> Use `LIKE` to match for words in a certain row value.
+-> Use `LIKE` to match for words in a certain row value.  
 -> Use `%` can match any character around the string and `_` can match a single character in a string.
 
 -> Can use `BETWEEN _ AND _` to find rows between a certain range.
 
 # ORDER BY
 
--> Use `ORDER BY` to take the results of the query and order them by a column
--> Use `ASC` (default, means least to greatest) or `DESC` (means greatest to smallest)
+-> Use `ORDER BY` to take the results of the query and order them by a column.  
+-> Use `ASC` (default, means least to greatest) or `DESC` (means greatest to smallest).
