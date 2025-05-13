@@ -30,7 +30,14 @@ The `SELECT` statement is used to **query data from a table**. It returns rows t
 -> NULL means that the value is not present for that row.
 -> Use `IS NULL` or `IS NOT NULL` to find or search for null values.
 
-## LIKE
+## LIKE, BETWEEN
 
 -> Use `LIKE` to match for words in a certain row value.
--> Use `%` can match any character around the string and `-` can match a single character in a string.
+-> Use `%` can match any character around the string and `_` can match a single character in a string.
+
+-> Can use `BETWEEN _ AND _` to find rows between a certain range.
+
+# ORDER BY
+
+-> Use `ORDER BY` to take the results of the query and order them by a column
+-> Use `ASC` (default, means least to greatest) or `DESC` (means greatest to smallest)
