@@ -55,3 +55,13 @@ Aggregate functions allow us to take a whole set of rows and return computations
 ### DISTINCT
 
 -> We can use the `DISTINCT` keyword to find unique records in a column.
+
+### SUBQUERIES
+
+-> A subquery is a query inside another query. It helps us use the result of one query as input for another.
+
+-> Subqueries are written in parentheses () and can be placed in:
+
+-SELECT
+-FROM
+-WHERE clauses

@@ -74,4 +74,4 @@ plt.barh(languages, popularity) # horizontal bar chart
 plt.tight_layout()
 
 # print(f'It took {end_time}') # 0.3s
-# plt.show()
+plt.show()

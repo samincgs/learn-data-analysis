@@ -10,7 +10,7 @@ colors = ['#008fd5', '#fc4f30', '#e5ae37', '#6d904f']
 labels = labels[:5]
 slices = slices[:5]
 
-explode = [0, 0, 0, 0.1 ,0] # adds padding to seperate from the radius of the circle and show emphasis
+explode = [0, 0, 0, 0.1 , 0] # adds padding to seperate from the radius of the circle and show emphasis
 
 plt.title('Pie Charts')
 
