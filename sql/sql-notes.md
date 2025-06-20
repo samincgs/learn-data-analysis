@@ -30,10 +30,11 @@ The `SELECT` statement is used to **query data from a table**. It returns rows t
 -> NULL means that the value is not present for that row.  
 -> Use `IS NULL` or `IS NOT NULL` to find or search for null values.
 
-### LIKE, BETWEEN
+### LIKE, BETWEEN, IN
 
 -> Use `LIKE` to match for words in a certain row value.  
 -> Use `%` can match any character around the string and `_` can match a single character in a string.
+-> Use `IN` can obtain multiple values from a SELECT statement.
 
 -> Can use `BETWEEN _ AND _` to find rows between a certain range.
 
@@ -56,7 +57,7 @@ Aggregate functions allow us to take a whole set of rows and return computations
 
 -> We can use the `DISTINCT` keyword to find unique records in a column.
 
-### SUBQUERIES
+### SUBQUERIES (Nested Query)
 
 -> A subquery is a query inside another query. It helps us use the result of one query as input for another.
 
